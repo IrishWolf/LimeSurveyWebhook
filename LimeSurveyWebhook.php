@@ -99,7 +99,7 @@ class LimeSurveyWebhook extends PluginBase
                     "survey" => $surveyId,
                     "event" => $comment,
                     "respondId" => $responseId,
-                    "response" => $response,
+                    "response" => json_encode($response),
                     "submitDate" => $submitDate,
                     "token" => isset($sToken) ? $sToken : null
                 );
